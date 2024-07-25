@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
-x = [1, 2, 3, 4, 5]
-y = [1, 4, 9, 16, 25]
+# Membaca gambar
+img = mpimg.imread('testing.jpg')
 
-plt.plot(x, y)
-plt.xlabel('X')
-plt.ylabel('Y')
-plt.title('Grafik Sederhana')
+# Menampilkan gambar
+plt.imshow(img)
+plt.axis('off')  # Menonaktifkan sumbu (opsional)
 plt.show()
